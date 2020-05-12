@@ -2,28 +2,9 @@
 <html>
 <head>
 	<title>Password Visibility</title>
-
-	<style type="text/css">
-		body {
-			margin: 1em auto;
-			max-width: 40em;
-			width: 88%;
-		}
-
-		label {
-			display: block;
-			width: 100%;
-		}
-
-		input {
-			margin-bottom: 1em;
-		}
-
-		[type="checkbox"] {
-			margin-bottom: 0;
-			margin-right: 0.25em;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -54,13 +35,7 @@
 		</p>
 	</form>
 
-	<script>
-
-	document.querySelector('#show-password').addEventListener('change', () => {
-		let field = document.querySelector('#password');
-		field.type == 'password' ? field.setAttribute('type','text') : field.setAttribute('type','password');
-	});
+	<script src="script.js"></script>
 	
-	</script>
 </body>
 </html>
