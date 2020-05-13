@@ -7,7 +7,7 @@ function togglePassword() {
 	password.type = this.checked ? 'text' : 'password';
 }
 
-toggle.addEventListener( 'change', togglePassword );
+toggle.addEventListener( 'click', togglePassword );
 
 /* First solution */
 
