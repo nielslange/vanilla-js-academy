@@ -1,9 +1,5 @@
 // Get all password input fields
-<<<<<<< HEAD
-const passwords = Array.from(document.querySelectorAll('[type="password"]'));
-=======
 const passwords = Array.prototype.slice.call(document.querySelectorAll('[type="password"]'));
->>>>>>> 🧹 Refactoring
 
 // Get show/hide passwords toggle
 const toggle = document.querySelector('#show-password');
