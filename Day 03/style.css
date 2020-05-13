@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --nord0: #2e3440;
   --nord1: #3b4252;
@@ -17,6 +18,8 @@
   --nord15: #b48ead;
 }
 
+=======
+>>>>>>> 🧹 Refactoring
 html, body {
 	height: 100%;
 }
