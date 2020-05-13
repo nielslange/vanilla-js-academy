@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-js-academy",
+  "version": "1.0.0",
+  "description": "A project-based online JavaScript training program for beginners.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nielslange/vanilla-js-academy.git"
+  },
+  "author": "Niels Lange",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nielslange/vanilla-js-academy/issues"
+  },
+  "homepage": "https://github.com/nielslange/vanilla-js-academy#readme",
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-icons": "^1.0.0-alpha3"
+  }
+}

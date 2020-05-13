@@ -2,39 +2,41 @@
 <html>
 <head>
 	<title>Password Visibility</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-	<h1>Password Visibility</h1>
+	
+	<form class="form-signin">
+		
+		<h1 class="h4">Password Visibility</h1>
+	
+		<p>Enter your username and password to login.</p>
+		
+		<form class="form-signin">
+			
+			<div class="form-group">
+				<label for="current-password" class="sr-only sr-only-focusable">Username</label>
+				<input type="text" class="form-control" placeholder="Username" aria-label="Username" id="username">
+			</div>
+			
+			<div class="form-group">
+				<label for="current-password" class="sr-only sr-only-focusable">Password</label>
+				<input type="password" class="form-control" placeholder="Password" aria-label="Password" id="password">
+			</div>
 
-	<p>Enter your username and password to login.</p>
+			<div class="form-group form-check">
+				<input class="form-check-input" type="checkbox" value="" id="show-password">
+				<label class="form-check-label" for="show-password">
+					Show password
+				</label>
+			</div>
 
-	<form>
-		<div>
-			<label for="username">Username</label>
-			<input type="text" name="username" id="username">
-		</div>
+			<button type="submit" class="btn btn-primary">Log In</button>
 
-		<div>
-			<label for="password">Password</label>
-			<input type="password" name="password" id="password">
-		</div>
-
-		<div>
-			<label for="show-password">
-				<input type="checkbox" name="show-passwords" id="show-password">
-				Show password
-			</label>
-		</div>
-
-		<p>
-			<button type="submit">Log In</button>
-		</p>
-	</form>
+		</form>
 
 	<script src="script.js"></script>
 	

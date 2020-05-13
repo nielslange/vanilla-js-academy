@@ -68,6 +68,7 @@ input {
 
 input[type="checkbox"] {
 	width: auto;
+	min-height: auto;
 }
 
 div#password-section {

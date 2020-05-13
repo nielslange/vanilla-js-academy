@@ -17,35 +17,23 @@
   --nord15: #b48ead;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
-	font-family: Hack, monospace;
-	background: var(--nord1);
-	color: var(--nord4);
-	margin: 1em auto;
-	max-width: 40em;
-	width: 88%;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f5f5f5;
 }
 
-label {
-	display: block;
+.form-signin {
 	width: 100%;
-}
-
-input, button {
-	background: var(--nord2);
-	border: 1px solid var(--nord0);
-	border-radius: 3px;
-	color: var(--nord4);
-	padding: 10px;
-	margin: 0.5em 0 1em;
-}
-
-[type="checkbox"] {
-	margin-bottom: 0;
-	margin-right: 0.25em;
-}
-
-[type="submit"]:focus,
-[type="submit"]:hover {
-	background: var(--nord3);
+	max-width: 420px;
+	padding: 15px;
+	margin: auto;
 }
