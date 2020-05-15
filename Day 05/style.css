@@ -18,9 +18,5 @@ body {
 	padding: 30px;
 	margin: auto;
 	box-shadow: 0 0 10px #ccc;
-
-}
-
-form {
-
+	border-radius: 5px;
 }
