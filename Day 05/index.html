@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Visibility</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	
+<div class="forms">
+
+	<h1 class="h4 mb-5">Password Visibility - Multiple Forms</h1>
+	
+	<div class="row">
+		
+		<div class="col-sm-6 mb-5">
+
+			<form class="form-signin">
+	
+				<h2 class="h4">Change Username</h2>
+			
+				<p>Enter your username and password to change your username.</p>
+			
+				<div class="form-group">
+					<label for="username" class="sr-only sr-only-focusable">Username</label>
+					<input type="text" class="form-control" placeholder="Username" aria-label="Username" id="username">
+				</div>
+			
+				<div class="form-group">
+					<label for="password" class="sr-only sr-only-focusable">Password</label>
+					<input type="password" class="form-control field-password" placeholder="Password" aria-label="Password" id="password">
+				</div>
+			
+				<div class="form-group form-check">
+					<input class="form-check-input" type="checkbox" value="" id="show-password">
+					<label class="form-check-label" for="show-password">Show password</label>
+				</div>
+			
+				<button type="submit" class="btn btn-primary btn-sm">Change Username</button>
+			
+			</form>
+
+		</div>
+		
+		<div class="col-sm-6 mb-5">
+
+			<form class="form-password-change">
+		
+				<h2 class="h4">Change Password</h2>
+				
+				<p>Enter your current password and new password below.</p>
+			
+				<div class="form-group">
+					<label for="current-password" class="sr-only sr-only-focusable">Password</label>
+					<input type="password" class="form-control field-password" placeholder="Current Password" aria-label="Current Password" id="current-password">
+				</div>
+			
+				<div class="form-group">
+					<label for="new-password" class="sr-only sr-only-focusable">New Password</label>
+					<input type="password" class="form-control field-password" placeholder="New Password" aria-label="New Password" id="new-password">
+				</div>
+			
+				<div class="form-group form-check">
+					<input class="form-check-input" type="checkbox" value="" id="show-passwords">
+					<label class="form-check-label" for="show-passwords">Show passwords</label>
+				</div>
+			
+				<button type="submit" class="btn btn-primary btn-sm">Change Passwords</button>
+			
+			</form>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+<script src="script.js"></script>
+	
+</body>
+</html>
