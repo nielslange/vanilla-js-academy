@@ -6,7 +6,7 @@ const count = document.querySelector('#character-count');
 
 // Calculate number of characters and add numer to character count section
 function countCharacters() {
-	count.innerHTML = this.value.length;
+	count.textContent = this.value.length;
 }
 
 // Listen to input events on text area field and call countCharacters() function
