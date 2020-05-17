@@ -1,13 +1,16 @@
-// Get text area field
+// Get textarea field
 const text = document.querySelector('#text');
 
-// Get character count section
+// Get character count element
 const count = document.querySelector('#character-count');
 
-// Calculate number of characters and add numer to character count section
+// Calculate number of characters
 function countCharacters() {
+
+	//  Add numer of character to count element
 	count.textContent = this.value.length;
+
 }
 
-// Listen to input events on text area field and call countCharacters() function
+// Listen to input event
 text.addEventListener( 'input', countCharacters );
