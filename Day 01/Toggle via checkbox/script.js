@@ -1,17 +1,13 @@
-/* Final solution */
-
+// Get password input field
 const password = document.querySelector('#password');
+
+// Get show password checkbox
 const toggle = document.querySelector('#show-password');
 
+// Define function to toogle visibility of password
 function togglePassword() {
 	password.type = this.checked ? 'text' : 'password';
 }
 
+// Add event listener to password checkbox
 toggle.addEventListener( 'click', togglePassword );
-
-/* First solution */
-
-// document.querySelector('#show-password').addEventListener('change', () => {
-// 	let field = document.querySelector('#password');
-// 	field.type == 'password' ? field.setAttribute('type','text') : field.setAttribute('type','password');
-// });
