@@ -9,6 +9,7 @@ function togglePassword() {
 	// Get attribute "data-visibility"
 	const visibility = this.dataset.visibility;
 
+	// Set data attribute and input type
 	if ( visibility == 'hidden' ) {
 		password.type = 'text';
 		visibility = 'visible';
