@@ -1,16 +1,18 @@
 // Get all password input fields
-const passwords = Array.prototype.slice.call(document.querySelectorAll('[type="password"]'));
+const passwords = Array.prototype.slice.call( 
+	document.querySelectorAll( '[type="password"]' ) 
+);
 
-// Get show/hide passwords toggle
+// Get show password checkbox
 const toggle = document.querySelector('#show-password');
 
-// Define show/hide passwords function
+// Define function to toogle visibility of password
 function togglePasswords() {
-	passwords.forEach( (item, index) => {
-		console.log(item.type);
+	// Loop though all password fields and toogle their input types
+	passwords.forEach( item => {
 		item.type = this.checked ? 'text' : 'password';
 	} )
 }
 
-// Add event listener to show/hide passwords toggle
+// Add event listener to password checkbox
 toggle.addEventListener( 'click', togglePasswords );
