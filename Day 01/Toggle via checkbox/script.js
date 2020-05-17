@@ -1,8 +1,8 @@
 // Get password input field
-const password = document.querySelector('#password');
+const password = document.querySelector( '#password' );
 
 // Get show password checkbox
-const toggle = document.querySelector('#show-password');
+const toggle = document.querySelector( '#show-password' );
 
 // Define function to toogle visibility of password
 function togglePassword() {

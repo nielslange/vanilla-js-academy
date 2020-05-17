@@ -1,20 +1,22 @@
 // Get password input field
-const password = document.querySelector('#password');
+const password = document.querySelector( '#password' );
 
-// Get show/hide password icon
-const toggle = document.querySelector('#show-password-btn');
+// Get show password icon
+const icon = document.querySelector( '#btn-toggle-password' );
 
-// Calculate visibility
+// Define function to toogle visibility of password
 function togglePassword() {
-	console.log(this.className);
-	if (this.className == 'hidden') {
+	// Get attribute "data-visibility"
+	const visibility = this.dataset.visibility;
+
+	if ( visibility == 'hidden' ) {
 		password.type = 'text';
-		this.className = 'visible';
+		visibility = 'visible';
 	} else {
 		password.type = 'password';
-		this.className = 'hidden';
+		visibility = 'hidden';
 	}
 }
 
-// 
-toggle.addEventListener( 'click', togglePassword );
+// Add event listener to password icon
+icon.addEventListener( 'click', togglePassword );

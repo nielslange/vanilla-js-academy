@@ -3,36 +3,35 @@
 <head>
 	<title>Password Visibility</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<script src="https://kit.fontawesome.com/f7c0690dba.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-	<div id="login">
+	<form class="form-signin">
 
-		<form>
-			<div id="username-section">
-				<label for="username">Username</label>
-				<input type="text" name="username" id="username">
-			</div>
+		<h1 class="h4">Password Visibility</h1>
+	
+		<p>Enter your username and password to login.</p>
 
-			<div id="password-section">
-				<label for="password">Password</label>
-				<input type="password" name="password" id="password">
-				<button type="button" id="show-password-btn" class="hidden">
-					<i class="fas fa-fw fa-eye-slash"></i>
-				</button>
-			</div>
-
-			<div id="remember-section">
-				<input type="checkbox" name="remember-me" id="remember-me">
-				<label for="remember-me">Remember me</label>
+		<form class="form-signin">
+			
+			<div class="form-group">
+				<label for="current-password" class="sr-only sr-only-focusable">Username</label>
+				<input type="text" class="form-control" placeholder="Username" aria-label="Username" id="username">
 			</div>
 			
-			<div id="submit-section">
-				<button type="submit">Log In</button>
+			<div class="form-group input-group">
+				<label for="current-password" class="sr-only sr-only-focusable">Password</label>
+				<input type="password" class="form-control" placeholder="Password" aria-label="Password" id="password">
+				<div class="input-group-append">
+					<button class="btn btn-outline-secondary" data-visibility="hidden" type="button" id="btn-toggle-password"><span></button>
+				</div>
 			</div>
+
+			<button type="submit" class="btn btn-primary">Log In</button>
+
 		</form>
 
 	</div>
