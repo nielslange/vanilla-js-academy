@@ -48,7 +48,7 @@ toggle.addEventListener('click', function (event) {
 }, false);
 ```
 
-## Field type vs. field state
+## Using the field to determine visibility
 
 ⚠️ Instead of checking the type of the input field, the state of teh input field should be checked.
 
