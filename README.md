@@ -1,6 +1,6 @@
 # Vanilla JS Academy
 
-Table of contents
+## Table of contents
 
 - Day 01 - [👨‍💻 Project: Toggle Password Visibility](https://github.com/nielslange/vanilla-js-academy/tree/master/Day%2001)
 - Day 02 - [👨‍🏫 Common issues: Variable location, Using the field to determine visibility & Ready Event](https://github.com/nielslange/vanilla-js-academy/tree/master/Day%2002)
@@ -8,6 +8,6 @@ Table of contents
 - Day 05 - [👨‍💻 Project: Toggling passwords in multiple forms](https://github.com/nielslange/vanilla-js-academy/tree/master/Day%2005)
 - Day 07 - [👨‍💻 Project: Character Count](https://github.com/nielslange/vanilla-js-academy/tree/master/Day%2007)
 
-Credits
+## Credits
 
 * https://vanillajsacademy.com/
