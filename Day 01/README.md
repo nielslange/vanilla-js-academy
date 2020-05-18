@@ -1,6 +1,6 @@
 # Day 1
 
-## 1. Getting an Element in the DOM
+## Getting an Element in the DOM
 
 To get an element, the selector `querySelector()` can be used. This will return the first matching element. To get more elements, the method `querySelectorAll()` needs to be used.
 
@@ -10,7 +10,7 @@ Sources:
 - https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
 
 
-## 2. Listening for Events and User Interactions
+## Listening for Events and User Interactions
 
 To listen to events and user actions, the method `addEventListener()` is needed. The method requires at least an event type, e.g. `click`, `change`, `input`, etc. and a listener, e.g. an annonymous function. 
 
@@ -19,7 +19,7 @@ Sources:
 - https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 - https://developer.mozilla.org/en-US/docs/Web/Events
 
-## 3. Project: Toggle Password Visibility
+## Project: Toggle Password Visibility
 
 The task of this project was to create a script that toggles the visibility of a password input field. I created the following two versions:
 
