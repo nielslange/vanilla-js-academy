@@ -2,12 +2,76 @@
 
 ## Table of contents
 
-- Day 01 - [👨‍💻 Project: Toggle Password Visibility](https://github.com/nielslange/vanilla-js-academy/tree/master/day-01)
-- Day 02 - [👨‍🏫 Common issues: Variable location, Using the field to determine visibility & Ready Event](https://github.com/nielslange/vanilla-js-academy/tree/master/day-02)
-- Day 03 - [👨‍💻 Project: Toggling multiple password fields](https://github.com/nielslange/vanilla-js-academy/tree/master/day-03)
-- Day 04 - [👨‍🏫 Common issues: NodeLists and forEach() & Targeting Individual Fields](https://github.com/nielslange/vanilla-js-academy/tree/master/day-04)
-- Day 05 - [👨‍💻 Project: Toggling passwords in multiple forms](https://github.com/nielslange/vanilla-js-academy/tree/master/day-05)
-- Day 07 - [👨‍💻 Project: Character Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-07)
+1. 👨‍💻 [Project: Toggle Password Visibility](https://github.com/nielslange/vanilla-js-academy/tree/master/day-01)
+2. 👨‍🏫 [Common issues: Variable location, Using the field to determine visibility & Ready Event](https://github.com/nielslange/vanilla-js-academy/tree/master/day-02)
+3. 👨‍💻 [Project: Toggling multiple password fields](https://github.com/nielslange/vanilla-js-academy/tree/master/day-03)
+4. 👨‍🏫 [Common issues: NodeLists and forEach() & Targeting Individual Fields](https://github.com/nielslange/vanilla-js-academy/tree/master/day-04)
+5. 👨‍💻 [Project: Toggling passwords in multiple forms](https://github.com/nielslange/vanilla-js-academy/tree/master/day-05)
+6. 👨‍🏫 
+7. 👨‍💻 [Project: Character Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-07)
+8. 👨‍🏫 
+9. 👨‍💻 
+10. 👨‍🏫 
+11. 👨‍💻 
+12. 👨‍🏫 
+13. 👨‍💻 
+14. 👨‍🏫 
+15. 👨‍💻 
+16. 👨‍🏫 
+17. 👨‍💻 
+18. 👨‍🏫 
+19. 👨‍💻 
+20. 👨‍🏫 
+21. 👨‍💻 
+22. 👨‍🏫 
+23. 👨‍💻 
+24. 👨‍🏫 
+25. 👨‍💻 
+26. 👨‍🏫 
+27. 👨‍💻 
+28. 👨‍🏫 
+29. 👨‍💻 
+30. 👨‍🏫 
+31. 👨‍💻 
+32. 👨‍🏫 
+33. 👨‍💻 
+34. 👨‍🏫 
+35. 👨‍💻 
+36. 👨‍🏫 
+37. 👨‍💻 
+38. 👨‍🏫 
+39. 👨‍💻 
+40. 👨‍🏫 
+41. 👨‍💻 
+42. 👨‍🏫 
+43. 👨‍💻 
+44. 👨‍🏫 
+45. 👨‍💻 
+46. 👨‍🏫 
+47. 👨‍💻 
+48. 👨‍🏫 
+49. 👨‍💻 
+50. 👨‍🏫 
+51. 👨‍💻 
+52. 👨‍🏫 
+53. 👨‍💻 
+54. 👨‍🏫 
+55. 👨‍💻 
+56. 👨‍🏫 
+57. 👨‍💻 
+58. 👨‍🏫 
+59. 👨‍💻 
+60. 👨‍🏫 
+61. 👨‍💻 
+62. 👨‍🏫 
+63. 👨‍💻 
+64. 👨‍🏫 
+65. 👨‍💻 
+66. 👨‍🏫 
+67. 👨‍💻 
+68. 👨‍🏫 
+69. 👨‍💻 
+70. 👨‍🏫 
 
 ## Credits
 
