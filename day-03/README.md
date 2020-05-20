@@ -1,8 +1,6 @@
 # Vanilla JS Academy » Day 3
 
-**Project:**
-
-Toggling multiple password fields
+## Project: Toggling multiple password fields
 
 **Task:**
 
