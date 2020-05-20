@@ -2,6 +2,10 @@
 
 ## Project: Character Count
 
+**Task:**
+
 Create a script that calculates the number of characters inside a textarea.
 
-**Demo:** https://codepen.io/nielslange/pen/mdezzzQ
+**Demo:**
+
+https://nielslange.github.io/vanilla-js-academy/day-07/
