@@ -23,5 +23,5 @@ Sources:
 
 The task of this project was to create a script that toggles the visibility of a password input field. I created the following two versions:
 
-- [Toggle via checkbox](https://github.com/nielslange/vanilla-js-academy/tree/master/Day%2001/Toggle%20via%20checkbox)
-- [Toggle via icon](https://github.com/nielslange/vanilla-js-academy/tree/master/Day%2001/Toggle%20via%20icon)
+- [Toggle via checkbox](https://github.com/nielslange/vanilla-js-academy/tree/master/day-01/toggle-via-checkbox)
+- [Toggle via icon](https://github.com/nielslange/vanilla-js-academy/tree/master/day-01/toggle-via-icon)
