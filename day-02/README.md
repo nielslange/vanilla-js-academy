@@ -6,7 +6,7 @@
 
 **Bad example:**
 
-```
+```js
 // Check the toggle checkbox
 var toggle = document.querySelector('#show-password');
 
@@ -29,7 +29,7 @@ toggle.addEventListener('click', function (event) {
 
 **Good example:**
 
-```
+```js
 // Get the password field and toggle checkbox
 var password = document.querySelector('#password');
 var toggle = document.querySelector('#show-password');
@@ -54,7 +54,7 @@ toggle.addEventListener('click', function (event) {
 
 **Bad example:**
 
-```
+```js
 // Listen for click events on the toggle
 toggle.addEventListener('click', function (event) {
 
@@ -71,7 +71,7 @@ toggle.addEventListener('click', function (event) {
 
 **Good example:**
 
-```
+```js
 // Listen for click events on the toggle
 toggle.addEventListener('click', function (event) {
 
@@ -92,7 +92,7 @@ toggle.addEventListener('click', function (event) {
 
 **Bad example:**
 
-```
+```js
 document.addEventListener('load', function () {
 
 	// Get the password field and toggle checkbox
@@ -117,7 +117,7 @@ document.addEventListener('load', function () {
 
 **Good example:**
 
-```
+```js
 // Get the password field and toggle checkbox
 var password = document.querySelector('#password');
 var toggle = document.querySelector('#show-password');
