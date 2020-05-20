@@ -10,8 +10,8 @@ const characterCount = document.querySelector('#character-count');
 /**
  * Calculate number of words.
  *
- * @param		{Object} textarea The content of the textarea.
- * @returns {Number}					The number of words.
+ * @param   {Object} textarea The content of the textarea.
+ * @returns {Number}          The number of words.
  */
 function countWords(textarea) {
   return textarea.value.split(/[\n\r\s]+/g).filter( e => e.trim() != '' ).length;
@@ -20,8 +20,8 @@ function countWords(textarea) {
 /**
  * Calculate number of characters.
  *
- * @param		{Object} textarea The content of the textarea.
- * @returns {Number} 					The number of characters.
+ * @param   {Object} textarea The content of the textarea.
+ * @returns {Number}          The number of characters.
  */
  function countCharacters(textarea) {
   return textarea.value.length;
