@@ -8,4 +8,4 @@ Create a script that toggles the visibility of multiple password input fields wi
 
 **Demo:**
 
-https://nielslange.github.io/vanilla-js-academy/day-03/index.html
+https://nielslange.github.io/vanilla-js-academy/day-03/
