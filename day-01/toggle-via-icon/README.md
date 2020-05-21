@@ -8,4 +8,4 @@ Create a script that toggles the visibility of a password input field in a login
 
 **Demo**
 
-https://nielslange.github.io/vanilla-js-academy/day-01/toggle-via-icon/index.html
+https://nielslange.github.io/vanilla-js-academy/day-01/toggle-via-icon/
