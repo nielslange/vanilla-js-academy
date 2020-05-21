@@ -8,3 +8,4 @@ Create a script that announces the the calculated number of words and characters
 
 **Demo:**
 
+https://nielslange.github.io/vanilla-js-academy/day-11/
