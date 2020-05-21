@@ -8,4 +8,4 @@ Create a script that toggles the visibility of multiple passwords and multiple f
 
 **Demo:**
 
-https://nielslange.github.io/vanilla-js-academy/day-05/index.html
+https://nielslange.github.io/vanilla-js-academy/day-05/
