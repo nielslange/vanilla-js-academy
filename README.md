@@ -12,7 +12,7 @@
 8. 👨‍🏫 
 9. 👨‍💻 [Project: Character and Word Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-09)
 10. 👨‍🏫 
-11. 👨‍💻 
+11. 👨‍💻 [Project: Announcing the Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-11)
 12. 👨‍🏫 
 13. 👨‍💻 
 14. 👨‍🏫 
