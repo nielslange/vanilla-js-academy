@@ -7,34 +7,38 @@
 	<script src="https://kit.fontawesome.com/f7c0690dba.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 
 	<form class="form-signin">
 
 		<h1 class="h4">Password Visibility</h1>
-	
+
 		<p>Enter your username and password to login.</p>
 
-		<form class="form-signin">
-			
-			<div class="form-group">
-				<label for="current-password" class="sr-only sr-only-focusable">Username</label>
-				<input type="text" class="form-control" placeholder="Username" aria-label="Username" id="username">
+		<div class="form-group">
+			<label for="current-password" class="sr-only sr-only-focusable">Username</label>
+			<input type="text" class="form-control" placeholder="Username" aria-label="Username" id="username">
+		</div>
+		
+		<div class="form-group input-group">
+			<label for="current-password" class="sr-only sr-only-focusable">Password</label>
+			<input type="password" class="form-control" placeholder="Password" aria-label="Password" id="password">
+			<div class="input-group-append">
+				<button class="btn btn-outline-secondary" data-visibility="hidden" type="button" id="btn-toggle-password"><span></button>
 			</div>
-			
-			<div class="form-group input-group">
-				<label for="current-password" class="sr-only sr-only-focusable">Password</label>
-				<input type="password" class="form-control" placeholder="Password" aria-label="Password" id="password">
-				<div class="input-group-append">
-					<button class="btn btn-outline-secondary" data-visibility="hidden" type="button" id="btn-toggle-password"><span></button>
-				</div>
-			</div>
+		</div>
 
-			<button type="submit" class="btn btn-primary">Log In</button>
+		<button type="submit" class="btn btn-primary">Log In</button>
 
-		</form>
+	</form>
 
-	</div>
+	<footer class="footer mt-auto">
+		<span class="text-muted">
+			<a href="/day-01/toggle-via-checkbox/index.html">← Previous project</a> | 
+			<a href="/index.html">↑ All projects</a> | 
+			<a href="/day-03/index.html">Next project →</a>
+		</span>
+	</footer>
 
 	<script src="script.js"></script>
 	
