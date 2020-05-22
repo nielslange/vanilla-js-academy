@@ -7,7 +7,7 @@
 3. 👨‍💻 [Project: Toggling multiple password fields](https://github.com/nielslange/vanilla-js-academy/tree/master/day-03)
 4. 👨‍🏫 [Common issues: NodeLists and forEach() & Targeting Individual Fields](https://github.com/nielslange/vanilla-js-academy/tree/master/day-04)
 5. 👨‍💻 [Project: Toggling passwords in multiple forms](https://github.com/nielslange/vanilla-js-academy/tree/master/day-05)
-6. 👨‍🏫 
+6. 👨‍🏫 [Common issues: Keeping Code DRY](https://github.com/nielslange/vanilla-js-academy/tree/master/day-06)
 7. 👨‍💻 [Project: Character Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-07)
 8. 👨‍🏫 
 9. 👨‍💻 [Project: Character and Word Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-09)
