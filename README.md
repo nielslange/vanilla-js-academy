@@ -2,19 +2,19 @@
 
 ## Table of contents
 
-1. 👨‍💻 [Project: Toggle Password Visibility](https://github.com/nielslange/vanilla-js-academy/tree/master/day-01)
+1. 👨‍💻 [Project: Toggle Password Visibility](https://github.com/nielslange/vanilla-js-academy/tree/master/day-01) ([Demo](https://github.com/nielslange/vanilla-js-academy/tree/master/day-01/toggle-via-checkbox) | [Demo](https://github.com/nielslange/vanilla-js-academy/tree/master/day-01/toggle-via-icon))
 2. 👨‍🏫 [Common issues: Variable location, Using the field to determine visibility & Ready Event](https://github.com/nielslange/vanilla-js-academy/tree/master/day-02)
-3. 👨‍💻 [Project: Toggling multiple password fields](https://github.com/nielslange/vanilla-js-academy/tree/master/day-03)
+3. 👨‍💻 [Project: Toggling multiple password fields](https://github.com/nielslange/vanilla-js-academy/tree/master/day-03) ([Demo](https://nielslange.github.io/vanilla-js-academy/day-03/))
 4. 👨‍🏫 [Common issues: NodeLists and forEach() & Targeting Individual Fields](https://github.com/nielslange/vanilla-js-academy/tree/master/day-04)
-5. 👨‍💻 [Project: Toggling passwords in multiple forms](https://github.com/nielslange/vanilla-js-academy/tree/master/day-05)
+5. 👨‍💻 [Project: Toggling passwords in multiple forms](https://github.com/nielslange/vanilla-js-academy/tree/master/day-05) ([Demo](https://nielslange.github.io/vanilla-js-academy/day-05/))
 6. 👨‍🏫 [Common issues: Keeping Code DRY](https://github.com/nielslange/vanilla-js-academy/tree/master/day-06)
-7. 👨‍💻 [Project: Character Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-07)
+7. 👨‍💻 [Project: Character Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-07) ([Demo](https://nielslange.github.io/vanilla-js-academy/day-07/))
 8. 👨‍🏫 
-9. 👨‍💻 [Project: Character and Word Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-09)
+9. 👨‍💻 [Project: Character and Word Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-09) ([Demo](https://nielslange.github.io/vanilla-js-academy/day-09/))
 10. 👨‍🏫 
-11. 👨‍💻 [Project: Announcing the Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-11)
+11. 👨‍💻 [Project: Announcing the Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-11) ([Demo](https://nielslange.github.io/vanilla-js-academy/day-11/))
 12. 👨‍🏫 
-11. 👨‍💻 [Project: Random Ron](https://github.com/nielslange/vanilla-js-academy/tree/master/day-13)
+11. 👨‍💻 [Project: Random Ron](https://github.com/nielslange/vanilla-js-academy/tree/master/day-13) ([Demo](https://nielslange.github.io/vanilla-js-academy/day-13/))
 14. 👨‍🏫 
 15. 👨‍💻 
 16. 👨‍🏫 
