@@ -7,7 +7,7 @@ const button = document.querySelector('button');
 // Fetch a random Ron Swanson quote.
 function fetchQuote() {
 	// Fetch a random quote from http://ron-swanson-quotes.herokuapp.com/v2/quotes
-	fetch( 'http://ron-swanson-quotes.herokuapp.com/v2/quotes' ).then( response => {
+	fetch( 'https://ron-swanson-quotes.herokuapp.com/v2/quotes' ).then( response => {
 		// Return quote on success or error on failure.
 		return response.ok ? response.json() : Promise.reject(response);
 	}).then( data => {
