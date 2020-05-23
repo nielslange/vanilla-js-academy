@@ -14,7 +14,7 @@
 10. 👨‍🏫 
 11. 👨‍💻 [Project: Announcing the Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-11)
 12. 👨‍🏫 
-13. 👨‍💻 
+11. 👨‍💻 [Project: Random Ron](https://github.com/nielslange/vanilla-js-academy/tree/master/day-13)
 14. 👨‍🏫 
 15. 👨‍💻 
 16. 👨‍🏫 
