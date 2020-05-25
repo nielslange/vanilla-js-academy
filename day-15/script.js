@@ -11,7 +11,7 @@ const url = 'https://ron-swanson-quotes.herokuapp.com/v2/quotes';
 const quotes = [];
 
 // Define number of unique consecutive quotes.
-const unique_quotes = 5;
+const unique_quotes = 50;
 
 // Get JSON response 
 function getJSON(response) {
