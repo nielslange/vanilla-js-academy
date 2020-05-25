@@ -66,5 +66,5 @@ function fetchQuote() {
 // Listen to button click.
 button.addEventListener('click', fetchQuote);
 
-// Call fetchQuote() when page is fully loaded.
-document.addEventListener('DOMContentLoaded', fetchQuote)
+// Fetch quote when page is fully loaded.
+fetchQuote();
