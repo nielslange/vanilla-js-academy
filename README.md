@@ -14,9 +14,9 @@
 10. 👨‍🏫 
 11. 👨‍💻 [Project: Announcing the Count](https://github.com/nielslange/vanilla-js-academy/tree/master/day-11) ([Demo](https://nielslange.github.io/vanilla-js-academy/day-11/))
 12. 👨‍🏫 
-11. 👨‍💻 [Project: Random Ron](https://github.com/nielslange/vanilla-js-academy/tree/master/day-13) ([Demo](https://nielslange.github.io/vanilla-js-academy/day-13/))
+13. 👨‍💻 [Project: Random Ron](https://github.com/nielslange/vanilla-js-academy/tree/master/day-13) ([Demo](https://nielslange.github.io/vanilla-js-academy/day-13/))
 14. 👨‍🏫 
-15. 👨‍💻 
+15. 👨‍💻 [Project: Random Ron without duplicates](https://github.com/nielslange/vanilla-js-academy/tree/master/day-15) ([Demo](https://nielslange.github.io/vanilla-js-academy/day-15/))
 16. 👨‍🏫 
 17. 👨‍💻 
 18. 👨‍🏫 
