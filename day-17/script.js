@@ -1,6 +1,9 @@
 // Get news container.
 const app = document.querySelector('#app');
 
+// Get copyright container.
+const copyright = document.querySelector('#copyright');
+
 // Get local API key.
 const api_key = NYT_API_KEY;
 
@@ -36,6 +39,18 @@ function getNews(response) {
 			</details>	
 		`;
 	}).join('');
+
+	return response;
+}
+
+/**
+ * Get copyright
+ *
+ * @param {Object} response The response object
+ * @returns void
+ */
+ function getCopyright(response) {
+	copyright.innerHTML = `<div class="my-3 text-muted">${response.copyright}</div>`;
 }
 
 /**
@@ -63,10 +78,11 @@ function getError(error) {
  * @returns void
  */
 function showNews() {
-	fetch(endpoint)		// Fetch enpoint.
-	.then(getJSON)		// Get JSON or Promise rejection object.
-	.then(getNews)		// Get and print news items.
-	.catch(getError);	// Catch and print error message.
+	fetch(endpoint)			// Fetch enpoint.
+	.then(getJSON)			// Get JSON or Promise rejection object.
+	.then(getNews)			// Get and print news items.
+	.then(getCopyright)	// Get and print the copyright.
+	.catch(getError);		// Catch and print error message.
 }
 
 // Load news once if page is fully loaded.
