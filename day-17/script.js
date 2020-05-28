@@ -5,7 +5,8 @@ const app = document.querySelector('#app');
 const copyright = document.querySelector('#copyright');
 
 // Get local API key.
-const api_key = NYT_API_KEY;
+// const api_key = NYT_API_KEY;
+const api_key = ${{ secrets.NYT_API_KEY }}
 
 // Define API endpoint.
 const endpoint = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${api_key}`;
