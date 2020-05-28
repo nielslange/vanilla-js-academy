@@ -8,6 +8,11 @@ const copyright = document.querySelector('#copyright');
 // const api_key = NYT_API_KEY;
 const api_key = ${{ secrets.NYT_API_KEY }}
 
+console.log(${{ secrets.NYT_API_KEY }});
+console.log(${ secrets.NYT_API_KEY });
+console.log(secrets.NYT_API_KEY);
+console.log(NYT_API_KEY);
+
 // Define API endpoint.
 const endpoint = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${api_key}`;
 
