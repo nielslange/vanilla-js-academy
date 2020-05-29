@@ -7,7 +7,7 @@ const copyright = document.querySelector('#copyright');
 // Get local API key.
 const api_key = 'LGpkjcYgDceynVLZCYf7yAGQJ6L1KyID';
 
-// Define API endpoint without section and API key.
+// Define API endpoint.
 const endpoint = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${api_key}`;
 
 // Define empty array for news items.
