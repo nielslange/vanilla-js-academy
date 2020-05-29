@@ -4,7 +4,7 @@
 
 **Task:**
 
-Display latest stories of teh New York Times using [the New York Times API](https://developer.nytimes.com/signup).
+Display latest stories of the New York Times using [the New York Times API](https://developer.nytimes.com/signup).
 
 **Demo:**
 
