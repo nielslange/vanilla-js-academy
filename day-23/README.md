@@ -8,4 +8,4 @@ Take an array of monsters, shuffle them and show them in teh DOM.
 
 **Demo:**
 
-https://nielslange.github.io/vanilla-js-academy/day-23/
+https://nielslange.github.io/vanilla-js-academy/day-23/index.html
