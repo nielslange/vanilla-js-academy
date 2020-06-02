@@ -14,13 +14,23 @@ const endpoint = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${
 let news_items = [];
 
 // Define amount of news items per section.
-const news_items_amount = 5;
+const news_items_amount = 100;
 
 // Define empty array for news sections.
 const news_sections = [];
 
 // Define amount of news sections.
-const news_sections_amount = 5;
+const news_sections_amount = 100;
+
+/**
+ * Humanize news items
+ *
+ * @param {String} string The original string.
+ * @returns The humanized string.
+ */
+function humanize(string) {
+	return string.replace(/trump/gmi, '🤡');
+}
 
 /**
  * Get JSON
@@ -119,7 +129,7 @@ function getNews(response) {
 	} );
 
 	// Sanitize news and add it to DOM.
-	app.innerHTML = DOMPurify.sanitize(news);
+	app.innerHTML = DOMPurify.sanitize(humanize(news));
 	
 	return response;
 }
@@ -131,7 +141,7 @@ function getNews(response) {
  * @returns void
  */
  function getCopyright(response) {
-	copyright.innerHTML = DOMPurify.sanitize(`<div class="my-3 text-muted">${response.copyright}</div>`);
+	copyright.innerHTML = DOMPurify.sanitize(humanize(`<div class="my-3 text-muted">${response.copyright}</div>`));
 }
 
 /**
