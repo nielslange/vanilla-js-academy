@@ -72,7 +72,7 @@ function prepareBarrels() {
 		`;
 	} );
 	
-	// ... and give teh filled barrels back.
+	// ... and give the filled barrels back.
 	app.innerHTML = `<div class="grid-row">${elements}</div>`;
 
 }
