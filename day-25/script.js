@@ -138,7 +138,7 @@ function openBarrel( element ) {
 function showLoseMessage() {
 	info.innerHTML = `
 	<div class="alert alert-danger text-center my-3" role="alert">
-		Nay ... the captain caught the pirates!
+		Nay ... the captain caught you!
 	</div>
 	`;
 }
@@ -151,7 +151,7 @@ function showLoseMessage() {
  function showWinMessage() {
 	info.innerHTML = `
 		<div class="alert alert-success text-center my-3" role="alert">
-			Aarr ... the pirates captured all items!
+			Aarr ... you captured all items!
 		</div>
 	`;
 }
