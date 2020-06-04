@@ -1,0 +1,57 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	background-color: #f5f5f5;
+	margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+h2 {
+	color: #4C566A;
+	text-transform: capitalize;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  width: 100%;
+}
+
+.grid-row {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+}
+
+.grid {
+	padding: 0.5em;
+}
+
+button {
+	background-size: 6em;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1px solid #D8DEE9;
+	border-radius: 5px;
+	min-height: 8em;
+	width: 100%;
+}
+
+button.barrel 		{ background-image: url(images/barrel.svg); }
+button.anchor 		{ background-image: url(images/anchor.svg); }
+button.barometer 	{ background-image: url(images/barometer.svg); }
+button.bell 			{ background-image: url(images/bell.svg); }
+button.captain 		{ background-image: url(images/captain.svg); }
+button.compass 		{ background-image: url(images/compass.svg); }
+button.helm 			{ background-image: url(images/helm.svg); }
+button.lifesaver 	{ background-image: url(images/lifesaver.svg); }
+button.map 				{ background-image: url(images/map.svg); }
+button.pipe 			{ background-image: url(images/pipe.svg); }
+button.radar 			{ background-image: url(images/radar.svg); }
+button.spyglass 	{ background-image: url(images/spyglass.svg); }
+button.vest 			{ background-image: url(images/vest.svg); }
