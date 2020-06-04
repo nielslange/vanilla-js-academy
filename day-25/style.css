@@ -33,12 +33,12 @@ h2 {
 }
 
 button {
-	background-size: 6em;
+	background-size: 5em;
 	background-repeat: no-repeat;
 	background-position: center;
 	border: 1px solid #D8DEE9;
 	border-radius: 5px;
-	min-height: 8em;
+	min-height: 7em;
 	width: 100%;
 }
 
