@@ -8,9 +8,16 @@ body {
 	margin-bottom: 60px; /* Margin bottom by footer height */
 }
 
-h2 {
-	color: #4C566A;
+h1.h4 {
+	color: #5E81AC;
+	font-family: 'Pirata One', cursive;
 	text-transform: capitalize;
+	line-height: 60px;
+}
+
+#info {
+	height: 60px;
+	vertical-align: middle;
 }
 
 .footer {

@@ -4,6 +4,9 @@ const app = document.querySelector('#app');
 // Get info container.
 const info = document.querySelector('#info');
 
+// Get repeat container.
+const repeat = document.querySelector('#repeat');
+
 // Array that keeps all the maritim icons.
 const items = [
 	{ icon: 'anchor', alt: 'A grey anchor' },
@@ -137,7 +140,7 @@ function openBarrel( element ) {
  */
 function showLoseMessage() {
 	info.innerHTML = `
-	<div class="alert alert-danger text-center my-3" role="alert">
+	<div class="alert alert-danger text-center" role="alert">
 		Nay ... the captain caught you!
 	</div>
 	`;
@@ -150,7 +153,7 @@ function showLoseMessage() {
  */
  function showWinMessage() {
 	info.innerHTML = `
-		<div class="alert alert-success text-center my-3" role="alert">
+		<div class="alert alert-success text-center" role="alert">
 			Aarr ... you captured all items!
 		</div>
 	`;
@@ -162,8 +165,8 @@ function showLoseMessage() {
  * @returns void
  */
 function showPlayAgainButton() {
-	info.innerHTML += `
-		<a class="btn btn-primary btn-block my-3" href="${window.location.href}">
+	repeat.innerHTML += `
+		<a class="btn btn-primary btn-block" href="${window.location.href}">
 			Play again
 		</a>
 	`;
