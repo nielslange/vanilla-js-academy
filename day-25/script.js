@@ -60,8 +60,10 @@ let checkedBarrels = 0;
  */
 function prepareBarrels() {
 
+	// Get empty barrels ready ...
 	let elements = '';
 
+	// ... fill them with items ...
 	shuffle( items ).forEach( element => {
 		elements += `
 		<div class="grid" data-item="${element.icon}">
@@ -70,6 +72,7 @@ function prepareBarrels() {
 		`;
 	} );
 	
+	// ... and give teh filled barrels back.
 	app.innerHTML = `<div class="grid-row">${elements}</div>`;
 
 }
@@ -168,8 +171,6 @@ function showPlayAgainButton() {
 
 // Listen to all click elements ..
 window.addEventListener( 'click', event => {
-
-	console.log( event );
 
 	// ... and return if the pirates did not click on a barrel ...
 	if ( ! event.target.matches( 'button' ) ) return;
