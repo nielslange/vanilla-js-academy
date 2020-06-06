@@ -1,4 +1,4 @@
-# Vanilla JS Academy » Day 19
+# Vanilla JS Academy » Day 23
 
 ## Project: Monster Shuffle
 

@@ -1,4 +1,4 @@
-# Vanilla JS Academy » Day 19
+# Vanilla JS Academy » Day 25
 
 ## Project: Find the Monsters
 
