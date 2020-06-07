@@ -53,8 +53,16 @@ let checkedBarrels = 0;
 		array[randomIndex]  = temporaryValue;
 	}
 
-	return array;
+	return uniquify( array );
 };
+
+function uniquify(  array  ) {
+	for (let i = 1; i <= array.length; i++) {
+		array[i-1].id = i;
+	}
+
+	return array;
+}
 
 /**
  * Prepare all barrels.
@@ -69,7 +77,7 @@ function prepareBarrels() {
 	// ... fill them with items ...
 	shuffle( items ).forEach( element => {
 		elements += `
-		<div class="grid" data-item="${element.icon}">
+		<div class="grid" data-item="${element.id}">
 			<button class="barrel" alt="A brown wodden barrel"></button>
 		</div>
 		`;
@@ -89,9 +97,7 @@ function prepareBarrels() {
 function openBarrel( element ) {
 
 	// Check the item that's inside the barrel.
-	const item = items.find( thisElement => { 
-		return thisElement.icon == element.parentElement.getAttribute('data-item') } 
-	);
+	const item = getItem( element );
 
 	// Get the barrel itself.
 	const barrel = element.parentElement;
@@ -103,7 +109,7 @@ function openBarrel( element ) {
 	if ( checkedBarrels === items.length - 1 ) return;
 
 	// Show the content of the barrel if the pirates haven't been caught yet.
-	barrel.innerHTML = `<img src="images/${item.icon}.svg" alt="${item.alt}"></img>`;
+	barrel.innerHTML = `<div class="${item.icon}" alt="${item.alt}"></div>`;
 
 	// Increase the count of the barrels the pirates opened already.
 	checkedBarrels++;
@@ -131,6 +137,18 @@ function openBarrel( element ) {
 
 	}
 
+}
+
+/**
+ * Get the item of the corresponding barrel.
+ *
+ * @param {Object} element The selected barrel.
+ * @returns {Object} The item inside the selected barrel.
+ */
+function getItem( element ) {
+	return items.find( thisItem => {
+		return thisItem.id == element.parentElement.getAttribute('data-item') }
+	);
 }
 
 /**

@@ -36,41 +36,37 @@ h1.h4 {
 }
 
 .grid {
-	padding: 0.25em;
+	padding: 0.25em 0.5em;
+	min-height: 7em;
 }
 
-button {
-	background-size: 5em;
+.grid button:hover {
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+.grid button,
+.grid div {
+	background-size: 4em;
 	background-repeat: no-repeat;
 	background-position: center;
 	border: 1px solid #D8DEE9;
 	border-radius: 5px;
-	min-height: 7em;
+	margin: 2px;
+	min-height: 6em;
+	padding: 2px;
 	width: 100%;
 }
 
-img {
-	background-size: 5em;
-	background-repeat: no-repeat;
-	background-position: center;
-	border: 1px solid #D8DEE9;
-	border-radius: 5px;
-	display: block;
-	padding: 20px;
-	max-height: 100px;
-	width: auto;
-}
-
-button.barrel 		{ background-image: url(images/barrel.svg); }
-/* button.anchor 		{ background-image: url(images/anchor.svg); }
-button.barometer 	{ background-image: url(images/barometer.svg); }
-button.bell 			{ background-image: url(images/bell.svg); }
-button.captain 		{ background-image: url(images/captain.svg); }
-button.compass 		{ background-image: url(images/compass.svg); }
-button.helm 			{ background-image: url(images/helm.svg); }
-button.lifesaver 	{ background-image: url(images/lifesaver.svg); }
-button.map 				{ background-image: url(images/map.svg); }
-button.pipe 			{ background-image: url(images/pipe.svg); }
-button.radar 			{ background-image: url(images/radar.svg); }
-button.spyglass 	{ background-image: url(images/spyglass.svg); }
-button.vest 			{ background-image: url(images/vest.svg); } */ */
+button.barrel { background-image: url(images/barrel.svg); }
+div.anchor 		{ background-image: url(images/anchor.svg); }
+div.barometer { background-image: url(images/barometer.svg); }
+div.bell 			{ background-image: url(images/bell.svg); }
+div.captain 	{ background-image: url(images/captain.svg); }
+div.compass 	{ background-image: url(images/compass.svg); }
+div.helm 			{ background-image: url(images/helm.svg); }
+div.lifesaver { background-image: url(images/lifesaver.svg); }
+div.map 			{ background-image: url(images/map.svg); }
+div.pipe 			{ background-image: url(images/pipe.svg); }
+div.radar 		{ background-image: url(images/radar.svg); }
+div.spyglass 	{ background-image: url(images/spyglass.svg); }
+div.vest 			{ background-image: url(images/vest.svg); }
