@@ -1,11 +1,11 @@
 // Get app container.
 const app = document.querySelector('#app');
 
-// Get info container.
-const info = document.querySelector('#info');
+// Get message container.
+const message = document.querySelector('#message');
 
-// Get repeat container.
-const repeat = document.querySelector('#repeat');
+// Get play again container.
+const playAgain = document.querySelector('#play-again');
 
 // Array that keeps all the maritim icons.
 const items = [
@@ -33,8 +33,8 @@ let checkedBarrels = 0;
  * Randomly shuffle an array
  *
  * https://stackoverflow.com/a/2450976/1293256
- * @param  {Array} array The array to shuffle
- * @return {Array}       The shuffled array
+ * @param {Array} array The original array.
+ * @return {Array} array The shuffled array.
  */
  function shuffle ( array ) {
 	let currentIndex = array.length;
@@ -56,6 +56,12 @@ let checkedBarrels = 0;
 	return uniquify( array );
 };
 
+/**
+ * Assign uniquie IDs to array elements
+ *
+ * @param {Array} array The original array.
+ * @returns {Array} array The updated array.
+ */
 function uniquify(  array  ) {
 	for (let i = 1; i <= array.length; i++) {
 		array[i-1].id = i;
@@ -157,7 +163,7 @@ function getItem( element ) {
  * @returns void
  */
 function showLoseMessage() {
-	info.innerHTML = `
+	message.innerHTML = `
 	<div class="alert alert-danger text-center" role="alert">
 		Nay ... the captain caught you!
 	</div>
@@ -170,7 +176,7 @@ function showLoseMessage() {
  * @returns void
  */
  function showWinMessage() {
-	info.innerHTML = `
+	message.innerHTML = `
 		<div class="alert alert-success text-center" role="alert">
 			Aarr ... you captured all items!
 		</div>
@@ -183,7 +189,7 @@ function showLoseMessage() {
  * @returns void
  */
 function showPlayAgainButton() {
-	repeat.innerHTML += `
+	playAgain.innerHTML += `
 		<a class="btn btn-primary btn-block" href="${window.location.href}">
 			Play again
 		</a>
