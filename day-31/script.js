@@ -40,16 +40,19 @@ function getTOC() {
 	// Add all missing IDs.
 	addMissingIDs();
 
-	// Wrap headline links in list items.
+	// Wrap headline links with list items.
 	const items = headlines.map(element => `
 		<li>
 			<a href="#${element.id}" title="Jump to the section ${element.innerText}">${element.innerText}</a>
 		</li>
 	`).join('');
 
-	// Return TOC as unordered list.
-	return `<ul class="my-4">${items}</ul>`;
+	// Wrap the list items with an unordered list.
+	const list = `<ul class="my-4">${items}</ul>`;
 
+	// Return TOC as unordered list.
+	return list;
+	
 }
 
 /**
@@ -59,8 +62,10 @@ function getTOC() {
  */
 function render() {
 
-	// Add TOC to DOM.
-	tableOfContents.innerHTML = getTOC();
+	// Add TOC to DOM, if second level headings exist.
+	if ( headlines ) {
+		tableOfContents.innerHTML = getTOC();
+	}
 
 }
 
