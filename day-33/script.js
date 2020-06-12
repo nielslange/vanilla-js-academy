@@ -21,6 +21,6 @@
 	} ).join('');
 
 	// Add TOC to DOM if at least one second level heading exists.
-	if ( items ) { toc.innerHTML = `<ul>${items}</ul>`; }
+	if ( items ) toc.innerHTML = `<ul>${items}</ul>`;
 		
 } ) ();
