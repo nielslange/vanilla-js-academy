@@ -1,8 +1,4 @@
-/** 
- * Create and run IFFE (Immediately Invoked Function Expression) 
- * 
- * @see https://developer.mozilla.org/en-US/docs/Glossary/IIFE
-*/
+// Create and run IFFE (Immediately Invoked Function Expression).
 ;( () => {
 
 	// Get all second level headings.
@@ -24,7 +20,7 @@
 		
 	} ).join('');
 
-	// Wrap heading list items with unordered list and add list to DOM.
-	toc.innerHTML = `<ul>${items}</ul>`;
+	// Add TOC to DOM if at least one second level heading exists.
+	if ( items ) { toc.innerHTML = `<ul>${items}</ul>`; }
 		
 } ) ();
