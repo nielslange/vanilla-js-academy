@@ -1,5 +1,5 @@
 // Create and run IFFE (Immediately Invoked Function Expression).
-;( () => {
+( () => {
 
 	// Get all second level headings.
 	const headlines = Array.prototype.slice.call(document.querySelectorAll('h2'));
