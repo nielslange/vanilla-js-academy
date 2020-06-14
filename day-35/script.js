@@ -27,8 +27,8 @@ function getJSON( response ) {
  * @return {Object} The weather fetch Object.
  */
 function getLocation( response ) {
-	const lat = response.latitude;
-	const lon = response.longitude;
+	const lat = parseFloat( response.latitude );
+	const lon = parseFloat( response.longitude );
 	const url = weatherAPIEndpoint;
 	const key = weatherAPIKey;
 	const endpoint = `${ url }?lat=${ lat }&lon=${ lon }&key=${ key }`;
@@ -43,11 +43,11 @@ function getLocation( response ) {
  */
 function getWhether( response ) {
 	const data = response.data[ 0 ];
-	const code = data.weather.icon;
-	const desc = data.weather.description;
+	const code = DOMPurify.sanitize( data.weather.icon );
+	const desc = DOMPurify.sanitize( data.weather.description );
 	const icon = `<img src="images/${ code }.png" alt="${ desc }"><br>`;
-	const temp = getTemperature( data.app_temp );
-	const city = data.city_name;
+	const temp = getTemperature( parseFloat( data.app_temp) );
+	const city = DOMPurify.sanitize( data.city_name );
 	const verb = desc.includes( 'clouds' ) ? 'are' : 'is';
 
 	app.innerHTML = `${ icon } There ${ verb } <strong>${ desc.toLowerCase() }</strong> with <strong>${ temp }</strong> in <strong>${ city }</strong>.`;
