@@ -111,7 +111,7 @@ function render() {
 // Display the weather information if the page is fully loaded.
 render();
 
-// Listen for tempereture scale change event.
+// Listen for temperature scale change event.
 window.addEventListener( 'change', ( event ) => {
 	if ( event.target.classList.contains( 'form-check-input' ) ) render();
 } );
