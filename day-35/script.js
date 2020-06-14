@@ -24,7 +24,7 @@ function getJSON(response) {
  * Get location data.
  * 
  * @param {object} response The response object.
- * @return The 
+ * @return The weather fetch object.
  */
 function getLocation(response) {
 	
@@ -42,7 +42,7 @@ function getLocation(response) {
  * Get weather data and add information to DOM.
  * 
  * @param {object} response The response object.
- * @return The 
+ * @return void
  */
 function getWhether(response) {
 
@@ -82,5 +82,5 @@ function render() {
 	.catch(getError);
 }
 
-// Display the weather information if teh page is fully loaded.
+// Display the weather information if the page is fully loaded.
 render();
