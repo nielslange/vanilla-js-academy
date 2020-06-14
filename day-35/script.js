@@ -54,8 +54,9 @@ console.log(response);
 	const icon = `<img src="images/${code}.png" alt="${desc}"><br>`;
 	const temp = data.app_temp;
 	const city = data.city_name;
+	const verb = desc.includes('clouds') ? 'are' : 'is';
 
-	app.innerHTML = `${icon} There is <strong>${desc.toLowerCase()}</strong> with <strong>${temp}°C</strong> in <strong>${city}</strong>.`;
+	app.innerHTML = `${icon} There ${verb} <strong>${desc.toLowerCase()}</strong> with <strong>${temp}°C</strong> in <strong>${city}</strong>.`;
 
 }
 
