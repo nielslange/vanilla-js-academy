@@ -22,6 +22,7 @@ This repo contains notes as well as exercises of the [Vanilla JS Academy](https:
 - Day 29: [Table of Contents](https://nielslange.github.io/vanilla-js-academy/day-29/index.html)
 - Day 31: [Table of Contents - Missing IDs](https://nielslange.github.io/vanilla-js-academy/day-31/index.html)
 - Day 33: [Table of Contents - Scope](https://nielslange.github.io/vanilla-js-academy/day-33/index.html)
+- Day 35: [Weather App](https://nielslange.github.io/vanilla-js-academy/day-35/index.html)
 
 ## Credits
 
