@@ -1,5 +1,5 @@
 // Get news container.
-const app = document.querySelector('#app');
+const app = document.querySelector( '#app' );
 
 // Define the monsters and sock array.
 const monsters = [
@@ -14,7 +14,7 @@ const monsters = [
 	'monster9',
 	'monster10',
 	'monster11',
-	'sock'
+	'sock',
 ];
 
 // Define empty items element.
@@ -27,38 +27,37 @@ let items = '';
  * @param  {Array} array The array to shuffle
  * @return {Array}       The shuffled array
  */
- function shuffle ( array ) {
+function shuffle( array ) {
 	let currentIndex = array.length;
 	let temporaryValue;
 	let randomIndex;
 
 	// While there remain elements to shuffle...
-	while (0 !== currentIndex) {
+	while ( 0 !== currentIndex ) {
 		// Pick a remaining element...
-		randomIndex 	= Math.floor(Math.random() * currentIndex);
+		randomIndex = Math.floor( Math.random() * currentIndex );
 		currentIndex -= 1;
 
 		// And swap it with the current element.
-		temporaryValue 			= array[currentIndex];
-		array[currentIndex] = array[randomIndex];
-		array[randomIndex] 	= temporaryValue;
+		temporaryValue = array[ currentIndex ];
+		array[ currentIndex ] = array[ randomIndex ];
+		array[ randomIndex ] = temporaryValue;
 	}
 
 	return array;
-
-};
+}
 
 /**
  * Initialize app.
  *
- * @return void 
+ * @return void
  */
 function init() {
-	shuffle( monsters ).forEach( element => {
-		items += `<div class="grid"><img src="images/${element}.svg" alt="${element}"></div>`;
+	shuffle( monsters ).forEach( ( element ) => {
+		items += `<div class="grid"><img src="images/${ element }.svg" alt="${ element }"></div>`;
 	} );
-	
-	app.innerHTML = `<div class="row">${items}</div>`;
+
+	app.innerHTML = `<div class="row">${ items }</div>`;
 }
 
 // Run app once page is loaded.

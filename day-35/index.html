@@ -15,8 +15,22 @@
 
 			<div id="app" class="text-center my-2">Checking the weather near you...</div>
 
-			<p class="small text-muted text-center">
-				Icons provided by <a href="https://www.weatherbit.io/api/codes">Weather API Codes/Icons</a>.
+			<form class="small text-muted text-center">
+				<div class="form-check form-check-inline">
+					Show temperature in 
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="scale" id="celcius" value="celcius" checked>
+					<label class="form-check-label" for="celcius">°C</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="scale" id="fahrenheit" value="fahrenheit">
+					<label class="form-check-label" for="fahrenheit">°F</label>
+				</div>
+			</form>
+			
+			<p class="small text-muted text-center my-1>
+				Icons provided by <a href="https://www.weatherbit.io/api/codes">Weather API Codes/Icons</a>.<br>
 			</p>	
 
 		</div>

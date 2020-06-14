@@ -1,87 +1,117 @@
 // Get the app container.
-const app = document.querySelector('#app');
+const app = document.querySelector( '#app' );
 
 // Get the location API endpoint.
-const location_api_endpoint = 'https://ipapi.co/json/';
+const locationAPIEndpoint = 'https://ipapi.co/json/';
 
 // Get the weather API endpoint.
-const weather_api_endpoint = 'https://api.weatherbit.io/v2.0/current';
+const weatherAPIEndpoint = 'https://api.weatherbit.io/v2.0/current';
 
 // Get the weather API key.
-const weather_api_key = 'f092496926424fe2ab42684f5b967c70';
+const weatherAPIKey = 'f092496926424fe2ab42684f5b967c70';
 
 /**
  * Get JSON data.
- * 
- * @param {object} response The response object.
- * @return The JSON data on success or the Promise rejection on failure.
+ *
+ * @param {Object} response The response Object.
+ * @return {Object} The JSON data on success or the Promise rejection on failure.
  */
-function getJSON(response) {
-	return response.ok ? response.json() : Promise.reject(response);
+function getJSON( response ) {
+	return response.ok ? response.json() : Promise.reject( response );
 }
 
 /**
  * Get location data.
- * 
- * @param {object} response The response object.
- * @return The weather fetch object.
+ *
+ * @param {Object} response The response Object.
+ * @return {Object} The weather fetch Object.
  */
-function getLocation(response) {
-	
+function getLocation( response ) {
 	const lat = response.latitude;
 	const lon = response.longitude;
-	const url = weather_api_endpoint;
-	const key = weather_api_key;
-	const endpoint = `${url}?lat=${lat}&lon=${lon}&key=${key}`;
+	const url = weatherAPIEndpoint;
+	const key = weatherAPIKey;
+	const endpoint = `${ url }?lat=${ lat }&lon=${ lon }&key=${ key }`;
 
-	return fetch(endpoint);
-
+	return fetch( endpoint );
 }
 
 /**
  * Get weather data and add information to DOM.
- * 
- * @param {object} response The response object.
- * @return void
+ *
+ * @param {Object} response The response Object.
  */
-function getWhether(response) {
-
-console.log(response);
-
-	const data = response.data[0];
+function getWhether( response ) {
+	const data = response.data[ 0 ];
 	const code = data.weather.icon;
 	const desc = data.weather.description;
-	const icon = `<img src="images/${code}.png" alt="${desc}"><br>`;
-	const temp = data.app_temp;
+	const icon = `<img src="images/${ code }.png" alt="${ desc }"><br>`;
+	const temp = getTemperature( data.app_temp );
 	const city = data.city_name;
-	const verb = desc.includes('clouds') ? 'are' : 'is';
+	const verb = desc.includes( 'clouds' ) ? 'are' : 'is';
 
-	app.innerHTML = `${icon} There ${verb} <strong>${desc.toLowerCase()}</strong> with <strong>${temp}°C</strong> in <strong>${city}</strong>.`;
+	app.innerHTML = `${ icon } There ${ verb } <strong>${ desc.toLowerCase() }</strong> with <strong>${ temp }</strong> in <strong>${ city }</strong>.`;
+}
 
+/**
+ * Get temperature.
+ *
+ * @param {string} temp The original temperature.
+ * @return {string} The updated temperature.
+ */
+function getTemperature( temp ) {
+	const radio = document.querySelector( '#fahrenheit' );
+	const f = c2f( temp ).toFixed( 1 );
+	const c = temp.toFixed( 1 );
+
+	return radio.checked ? `${ f }°F` : `${ c }°C`;
+}
+
+/**
+ * Convert Celcius to Fahrenheit.
+ *
+ * @param {string} temp The original temperature.
+ * @return {string} The updated temperature.
+ */
+function c2f( temp ) {
+	return temp * 1.8 + 32;
+}
+
+/**
+ * Convert Fahrenheit to Celcius.
+ *
+ * @param {string} temp The original temperature.
+ * @return {string} The updated temperature.
+ */
+function f2c( temp ) {
+	return ( temp - 32 ) / 1.8;
 }
 
 /**
  * Return error message to the console.
- * 
- * @return void
+ *
+ * @param {Object} error The error object.
  */
-function getError(error) {
-	console.error(error);
+function getError( error ) {
+	console.error( error );
 }
 
 /**
  * Fetch location first and weather information second.
- * 
- * @return void
  */
 function render() {
-	fetch(location_api_endpoint)
-	.then(getJSON)
-	.then(getLocation)
-	.then(getJSON)
-	.then(getWhether)
-	.catch(getError);
+	fetch( locationAPIEndpoint )
+		.then( getJSON )
+		.then( getLocation )
+		.then( getJSON )
+		.then( getWhether )
+		.catch( getError );
 }
 
 // Display the weather information if the page is fully loaded.
 render();
+
+// Listen for tempereture scale change event.
+window.addEventListener( 'change', ( event ) => {
+	if ( event.target.classList.contains( 'form-check-input' ) ) render();
+} );

@@ -1,14 +1,14 @@
 // Get textarea field.
-const text = document.querySelector('#text');
+const text = document.querySelector( '#text' );
 
 // Get #word-count element.
-const wordCount = document.querySelector('#word-count');
+const wordCount = document.querySelector( '#word-count' );
 
 // Get #character-count element.
-const characterCount = document.querySelector('#character-count');
+const characterCount = document.querySelector( '#character-count' );
 
 // Get aria-live element
-const ariaLive = document.querySelector('[aria-live="polite"]');
+const ariaLive = document.querySelector( '[aria-live="polite"]' );
 
 /**
  * Calculate number of words.
@@ -16,8 +16,10 @@ const ariaLive = document.querySelector('[aria-live="polite"]');
  * @param   {Object} textarea The content of the textarea.
  * @returns {Number}          The number of words.
  */
-function countWords(textarea) {
-  return textarea.value.split(/[\n\r\s]+/g).filter( e => e.trim() != '' ).length;
+function countWords( textarea ) {
+	return textarea.value
+		.split( /[\n\r\s]+/g )
+		.filter( ( e ) => e.trim() != '' ).length;
 }
 
 /**
@@ -26,8 +28,8 @@ function countWords(textarea) {
  * @param   {Object} textarea The content of the textarea.
  * @returns {Number}          The number of characters.
  */
- function countCharacters(textarea) {
-  return textarea.value.length;
+function countCharacters( textarea ) {
+	return textarea.value.length;
 }
 
 /**
@@ -36,16 +38,15 @@ function countWords(textarea) {
  * @returns void
  */
 function count() {
-	
 	// Get words count.
-	let wordsCount = countWords(this);
+	let wordsCount = countWords( this );
 
 	// Get words label.
 	let wordsLabel = wordsCount == 1 ? 'word' : 'words';
 
 	// Get characters count.
-	let charactersCount = countCharacters(this);
-	
+	let charactersCount = countCharacters( this );
+
 	// Get characters label.
 	let charactersLabel = charactersCount == 1 ? 'character' : 'characters';
 
@@ -56,7 +57,7 @@ function count() {
 	characterCount.textContent = charactersCount;
 
 	// Update the aria-live element.
-	ariaLive.textContent = `You have written ${wordsCount} ${wordsLabel} and ${charactersCount} ${charactersLabel}.`;
+	ariaLive.textContent = `You have written ${ wordsCount } ${ wordsLabel } and ${ charactersCount } ${ charactersLabel }.`;
 }
 
 // Listen to input event.

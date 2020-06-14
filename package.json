@@ -1,0 +1,26 @@
+{
+  "name": "vanilla-js-academy",
+  "version": "1.0.0",
+  "description": "This repo contains notes as well as exercises of the [Vanilla JS Academy](https://vanillajsacademy.com/).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nielslange/vanilla-js-academy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nielslange/vanilla-js-academy/issues"
+  },
+  "homepage": "https://github.com/nielslange/vanilla-js-academy#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^10.0.0"
+  },
+  "scripts": {
+    "format:js": "wp-scripts format-js",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:js:src": "wp-scripts lint-js ./day-35"
+  }  
+}

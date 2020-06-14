@@ -6,7 +6,6 @@ const icon = document.querySelector( '#btn-toggle-password' );
 
 // Define function to toogle visibility of password
 function togglePassword() {
-
 	// Set data attribute and input type
 	if ( this.dataset.visibility == 'hidden' ) {
 		password.type = 'text';

@@ -1,8 +1,10 @@
 // Get all second level headings.
-const headlines = Array.prototype.slice.call(document.querySelectorAll('h2'));
+const headlines = Array.prototype.slice.call(
+	document.querySelectorAll( 'h2' )
+);
 
 // get teh table of contents container.
-const tableOfContents = document.querySelector('#table-of-contents');
+const tableOfContents = document.querySelector( '#table-of-contents' );
 
 /**
  * Get headlines.
@@ -10,13 +12,16 @@ const tableOfContents = document.querySelector('#table-of-contents');
  * @returns {String} The headlines as link within an unordered list.
  */
 function getTableOfContents() {
-	const items = headlines.map(element => 
-		`<li>
-			<a href="#${element.id}" title="Jump to the section ${element.innerText}">${element.innerText}</a>
+	const items = headlines
+		.map(
+			( element ) =>
+				`<li>
+			<a href="#${ element.id }" title="Jump to the section ${ element.innerText }">${ element.innerText }</a>
 		</li>`
-	).join('');
+		)
+		.join( '' );
 
-	return `<ul class="my-4">${items}</ul>`;
+	return `<ul class="my-4">${ items }</ul>`;
 }
 
 /**
