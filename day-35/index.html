@@ -13,9 +13,17 @@
 	<div class="row">
 		<div class="col-md-6 offset-md-3">
 
-			<div id="app" class="text-center my-2">Checking the weather near you...</div>
+			<div id="app" class="text-center my-2">
 
-			<form class="small text-muted text-center">
+			 <p>Checking the weather near you...</p>
+
+			 <p class="alert alert-info" role="alert">
+				 Waited for too long? Feel free to check teh weather directly on <a href="https://weather.com/">weather.com</a>.
+			 </p>
+
+			</div>
+
+			<form class="small text-muted text-center d-none" data-info="form">
 				<div class="form-check form-check-inline">
 					Show temperature in 
 				</div>
@@ -29,9 +37,9 @@
 				</div>
 			</form>
 			
-			<p class="small text-muted text-center my-1>
+			<p class="small text-muted text-center my-1 d-none" data-info="copyright">
 				Icons provided by <a href="https://www.weatherbit.io/api/codes">Weather API Codes/Icons</a>.<br>
-			</p>	
+			</p>
 
 		</div>
 	</div>

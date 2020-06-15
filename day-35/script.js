@@ -1,6 +1,12 @@
 // Get the app container.
 const app = document.querySelector( '#app' );
 
+// Get the form container.
+const form = document.querySelector( '[data-info="form"]' );
+
+// Get the copyright container.
+const copyright = document.querySelector( '[data-info="copyright"]' );
+
 // Get the location API endpoint.
 const locationAPIEndpoint = 'https://ipapi.co/json/';
 
@@ -37,7 +43,7 @@ function getLocation( response ) {
 }
 
 /**
- * Get weather data and add information to DOM.
+ * Get weather data, add it to DOM and toggle visibility of form and copyright container.
  *
  * @param {Object} response The response Object.
  */
@@ -50,7 +56,17 @@ function getWhether( response ) {
 	const city = DOMPurify.sanitize( data.city_name );
 	const verb = desc.includes( 'clouds' ) ? 'are' : 'is';
 
-	app.innerHTML = `${ icon } There ${ verb } <strong>${ desc.toLowerCase() }</strong> with <strong>${ temp }</strong> in <strong>${ city }</strong>.`;
+	// Add weather information to DOM.
+	app.innerHTML = `
+		${ icon } There ${ verb } <strong>${ desc.toLowerCase() }</strong> with 
+		<strong>${ temp }</strong> in <strong>${ city }</strong>.
+	`;
+
+	// Make form container visible.
+	form.classList.remove('d-none');
+
+	// Make copyright container visible.
+	copyright.classList.remove('d-none');
 }
 
 /**
