@@ -52,7 +52,7 @@ function getWhether( response ) {
 	const code = DOMPurify.sanitize( data.weather.icon );
 	const desc = DOMPurify.sanitize( data.weather.description );
 	const icon = `<img src="images/${ code }.png" alt="${ desc }"><br>`;
-	const temp = getTemperature( parseFloat( data.app_temp) );
+	const temp = getTemperature( parseFloat( data.app_temp ) );
 	const city = DOMPurify.sanitize( data.city_name );
 	const verb = desc.includes( 'clouds' ) ? 'are' : 'is';
 
@@ -63,10 +63,10 @@ function getWhether( response ) {
 	`;
 
 	// Make form container visible.
-	form.classList.remove('d-none');
+	form.classList.remove( 'd-none' );
 
 	// Make copyright container visible.
-	copyright.classList.remove('d-none');
+	copyright.classList.remove( 'd-none' );
 }
 
 /**

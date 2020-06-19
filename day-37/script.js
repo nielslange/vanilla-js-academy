@@ -1,13 +1,12 @@
-function displayWeather(options) {
-
+function displayWeather( options ) {
 	const defaults = {
 		selector: '#app',
 		units: 'M', // M - [DEFAULT] Metric (Celcius, m/s, mm) |  S - Scientific (Kelvin, m/s, mm) | I - Fahrenheit (F, mph, in)
 		message: `{icon} There {verb} <strong>{desc}</strong> with <strong>{temp}</strong> in <strong>{city}</strong>.`,
-		icon: true
-	}
+		icon: true,
+	};
 
-	let settings = Object.assign(defaults, options);
+	let settings = Object.assign( defaults, options );
 
 	// Get the app container.
 	const app = document.querySelector( settings.selector );
@@ -59,21 +58,24 @@ function displayWeather(options) {
 		const data = response.data[ 0 ];
 		const code = DOMPurify.sanitize( data.weather.icon );
 		const desc = DOMPurify.sanitize( data.weather.description );
-		const icon = settings.icon ? `<img src="images/${ code }.png" alt="${ desc }"><br>` : '';
-		const temp = getTemperature( parseFloat( data.app_temp) );
+		const icon = settings.icon
+			? `<img src="images/${ code }.png" alt="${ desc }"><br>`
+			: '';
+		const temp = getTemperature( parseFloat( data.app_temp ) );
 		const city = DOMPurify.sanitize( data.city_name );
 		const verb = desc.includes( 'clouds' ) ? 'are' : 'is';
-		let message = settings.message.replace('{icon}', icon)
-																	.replace('{verb}', verb)
-																	.replace('{desc}', desc)
-																	.replace('{temp}', temp)
-																	.replace('{city}', city);
+		let message = settings.message
+			.replace( '{icon}', icon )
+			.replace( '{verb}', verb )
+			.replace( '{desc}', desc )
+			.replace( '{temp}', temp )
+			.replace( '{city}', city );
 
 		// Add weather information to DOM.
 		app.innerHTML = message;
 
 		// Make copyright container visible.
-		copyright.classList.remove('d-none');
+		copyright.classList.remove( 'd-none' );
 	}
 
 	/**
@@ -84,9 +86,12 @@ function displayWeather(options) {
 	 */
 	function getTemperature( temp ) {
 		switch ( settings.units ) {
-			case 'I': return `${ temp }°F`;
-			case 'S': return `${ temp }°K`;
-			default:  return `${ temp }°C`;
+			case 'I':
+				return `${ temp }°F`;
+			case 'S':
+				return `${ temp }°K`;
+			default:
+				return `${ temp }°C`;
 		}
 	}
 
@@ -119,27 +124,27 @@ function displayWeather(options) {
 displayWeather();
 
 // Display weather with temperature in Fahrenheit.
-displayWeather({
+displayWeather( {
 	selector: '#app2',
 	units: 'I',
-});
+} );
 
 // Display weather with temperature in Kelvin.
-displayWeather({
+displayWeather( {
 	selector: '#app3',
 	units: 'S',
-});
+} );
 
 // Display weather with temperature in Fahrenheit without icon.
-displayWeather({
+displayWeather( {
 	selector: '#app4',
 	units: 'S',
-	icon: false
-});
+	icon: false,
+} );
 
 // Display weather with custom message.
-displayWeather({
+displayWeather( {
 	selector: '#app5',
 	icon: false,
 	message: `<strong>{city}</strong>: {temp}`,
-});
+} );
