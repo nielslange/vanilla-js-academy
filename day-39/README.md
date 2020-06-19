@@ -1,12 +1,12 @@
-# Vanilla JS Academy » Day 37
+# Vanilla JS Academy » Day 39
 
-## Project: Weather App - Plugin
+## Project: A Helper Library
 
 **Task:**
 
-Create an app, as plugin, that displays the weather based on the user's location.
+Create a helper library.
 
 
 **Demo:**
 
-https://nielslange.github.io/vanilla-js-academy/day-37/index.html
+https://nielslange.github.io/vanilla-js-academy/day-39/index.html
