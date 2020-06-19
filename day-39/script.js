@@ -8,28 +8,24 @@ const _ = ( () => {
 	const methods = {};
 
 	// Convert a NodeList to an array.
-	methods.toArray = ( nodelist ) => {
-		return Array.prototype.slice.call( nodelist );
-	};
+	methods.toArray = nodelist => [...nodelist];
 
 	// Get the first matching element in the DOM.
-	methods.get = ( element ) => {
-		return document.querySelector( element );
-	};
+	methods.get = element => document.querySelector( element );
 
 	// Get all matching elements in the DOM as an array.
-	methods.getAll = ( element ) => {
+	methods.getAll = element => {
 		return methods.toArray( document.querySelectorAll( element ) );
 	};
 
 	// Add a class to all elements in an array.
 	methods.addClass = ( array, className ) => {
-		array.map( ( element ) => element.classList.add( className ) );
+		array.forEach( element => element.classList.add( className ) );
 	};
 
 	// Remove a class from all elements in an array.
 	methods.removeClass = ( array, className ) => {
-		array.map( ( element ) => element.classList.remove( className ) );
+		array.forEach( element => element.classList.remove( className ) );
 	};
 
 	// Return methods.
