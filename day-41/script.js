@@ -124,7 +124,7 @@ console.log( { win } );                   // Log window element.
 const button = $( 'button' );             // Get button elements.
 console.log( { button } );                // Log button elements.
 console.log( button.toArray() );          // Log array of button elements.
-console.log( button.getFirstAndLast() );	// Log first and last button elements.
+console.log( button.getFirstAndLast() );  // Log first and last button elements.
 
 const li = $( 'li' );                     // Get list elements.
 console.log( { li } );                    // Log list elements.
