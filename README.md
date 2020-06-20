@@ -24,7 +24,8 @@ This repo contains notes as well as exercises of the [Vanilla JS Academy](https:
 - Day 33: [Table of Contents - Scope](https://nielslange.github.io/vanilla-js-academy/day-33/index.html)
 - Day 35: [Weather App](https://nielslange.github.io/vanilla-js-academy/day-35/index.html)
 - Day 37: [Weather App - Plugin](https://nielslange.github.io/vanilla-js-academy/day-37/index.html)
-- Day 37: [A Helper Library](https://nielslange.github.io/vanilla-js-academy/day-39/index.html)
+- Day 39: [A Helper Library](https://nielslange.github.io/vanilla-js-academy/day-39/index.html)
+- Day 41: [DOM Manipulation Library](https://nielslange.github.io/vanilla-js-academy/day-41/index.html)
 
 ## Credits
 
