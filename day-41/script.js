@@ -62,17 +62,14 @@ const $ = ( function() {
    * @return {Array} The array with the first and last matching item.
    */
   Constructor.prototype.getFirstAndLast = function() {
-    // Get array of matching elements.
-    const elements = toArray( this.elements );
-    
     // Define empty array.
     let array = [];
 
     // Add first matching element to array.
-    array.push( first( elements ) );
+    array.push( first( this.elements ) );
 
     // Add last matching element to array.
-    array.push( last( elements ) );
+    array.push( last( this.elements ) );
 
     // Return the array with teh first and the last matching element.
     return toArray( array );
@@ -84,11 +81,8 @@ const $ = ( function() {
    * @param {String} className The class name to add.
    */
   Constructor.prototype.addClass = function( className ) {
-    // Get array of matching elements.
-    const elements = toArray( this.elements );
-
     // Loop through elements and add the class name.
-    elements.forEach( ( element ) => {
+    this.elements.forEach( ( element ) => {
       element.classList.add( className );
     } );
   };
@@ -99,11 +93,8 @@ const $ = ( function() {
    * @param {String} className The class name to remove.
    */
   Constructor.prototype.removeClass = function( className ) {
-    // Get array of matching elements.
-    const elements = toArray( this.elements );
-    
     // Loop through elements and remove the class name.
-    elements.forEach( ( element ) => {
+    this.elements.forEach( ( element ) => {
       element.classList.remove( className );
     } );
   };
