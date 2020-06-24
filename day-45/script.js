@@ -168,7 +168,7 @@ document.addEventListener('click', clickHandler, false);
     
 /*******************************************************************************
 
-Line 25 / Wrong variable name
+Line 25 / Wrong variable name potentially due to similarity
 
 Before  : var count;
 After   : var found;
