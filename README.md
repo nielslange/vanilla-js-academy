@@ -27,6 +27,7 @@ This repo contains notes as well as exercises of the [Vanilla JS Academy](https:
 - Day 39: [A Helper Library](https://nielslange.github.io/vanilla-js-academy/day-39/index.html)
 - Day 41: [DOM Manipulation Library](https://nielslange.github.io/vanilla-js-academy/day-41/index.html)
 - Day 43: [DOM manipulation library with chaining methods](https://nielslange.github.io/vanilla-js-academy/day-43/index.html)
+- Day 45: [Debugging Broken Code](https://nielslange.github.io/vanilla-js-academy/day-45/index.html)
 
 ## Credits
 
