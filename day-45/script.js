@@ -22,7 +22,7 @@ var monsters = [
 var app = document.querySelector('#app');
 
 // The number of monsters who have been found
-var count;
+var found;
 
 
 //
@@ -167,6 +167,13 @@ renderMonsters();
 document.addEventListener('click', clickHandler, false);
     
 /*******************************************************************************
+
+Line 25 / Wrong variable name
+
+Before  : var count;
+After   : var found;
+
+********************************************************************************
 
 Line 80 / Image not found due to incomplete url
 
