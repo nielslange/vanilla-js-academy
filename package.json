@@ -16,7 +16,7 @@
   "homepage": "https://github.com/nielslange/vanilla-js-academy#readme",
   "devDependencies": {
     "@wordpress/scripts": "^10.0.0",
-    "prettier": "^2.0.5"
+    "prettier": "npm:wp-prettier@^2.0.5"
   },
   "scripts": {
     "format:js": "wp-scripts format-js",
