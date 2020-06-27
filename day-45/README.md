@@ -4,7 +4,7 @@
 
 **Task:**
 
-Bedug and fix broken code of the _Monsters!_ game.
+Debug and fix broken code of the _Monsters!_ game.
 
 
 **Demo:**
