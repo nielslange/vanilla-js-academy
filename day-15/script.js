@@ -55,7 +55,10 @@ function showError( error ) {
 
 // Fetch a random Ron Swanson quote.
 function fetchQuote() {
-	fetch( url ).then( getJSON ).then( showQuote ).catch( showError );
+	fetch( url )
+		.then( getJSON )
+		.then( showQuote )
+		.catch( showError );
 }
 
 // Listen to button click.

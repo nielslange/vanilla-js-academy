@@ -34,7 +34,7 @@ var found;
  * @param  {Array} array The array to shuffle
  * @return {String}      The first item in the shuffled array
  */
-var shuffle = function ( array ) {
+var shuffle = function( array ) {
 	var currentIndex = array.length;
 	var temporaryValue, randomIndex;
 
@@ -56,7 +56,7 @@ var shuffle = function ( array ) {
 /**
  * Render the grid of monsters onto the game board
  */
-var renderMonsters = function () {
+var renderMonsters = function() {
 	// Reset the number of monsters who have been found
 	found = 0;
 
@@ -70,7 +70,7 @@ var renderMonsters = function () {
 		'<p>Click a door to reveal a monster. Try not to find the sock.</p>' +
 		'<div class="row">' +
 		monsters
-			.map( function ( monster, index ) {
+			.map( function( monster, index ) {
 				var html =
 					'<div class="grid">' +
 					'<button data-monster-id="' +
@@ -88,7 +88,7 @@ var renderMonsters = function () {
 /**
  * Render a new UI when the player loses
  */
-var renderLost = function () {
+var renderLost = function() {
 	app.innerHTML =
 		'<img class="img-full" alt="" src="https://media.giphy.com/media/13zUNhE9WZspMc/giphy.gif">' +
 		'<h2>Oops, you found a sock!</h2>' +
@@ -100,7 +100,7 @@ var renderLost = function () {
 /**
  * Render a new UI when the player wins
  */
-var renderWon = function () {
+var renderWon = function() {
 	app.innerHTML =
 		'<img class="img-full" alt="" src="https://media.giphy.com/media/1242bJFCbb3FxC/giphy.gif">' +
 		'<h2>You won!</h2>' +
@@ -114,7 +114,7 @@ var renderWon = function () {
  * Handle click events
  * @param  {Event} event The event object
  */
-var clickHandler = function ( event ) {
+var clickHandler = function( event ) {
 	// If a "play again" button was clicked, reset the UI and end the callback function
 	if ( event.target.hasAttribute( 'data-monster-play-again' ) ) {
 		renderMonsters();

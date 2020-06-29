@@ -1,4 +1,4 @@
-const $ = ( function () {
+const $ = ( function() {
 	// Use strict mode.
 	'use strict';
 
@@ -29,7 +29,7 @@ const $ = ( function () {
 	 *
 	 * @param {String} selector The selector of the element to use.
 	 */
-	const Constructor = function ( selector ) {
+	const Constructor = function( selector ) {
 		if ( 'document' === selector ) {
 			this.elements = [ document ];
 		} else if ( 'window' === selector ) {
@@ -52,7 +52,7 @@ const $ = ( function () {
 	 *
 	 * @return {Array} The array of the wanted element(s).
 	 */
-	Constructor.prototype.toArray = function () {
+	Constructor.prototype.toArray = function() {
 		return toArray( this.elements );
 	};
 
@@ -61,7 +61,7 @@ const $ = ( function () {
 	 *
 	 * @return {Array} The array with the first and last matching item.
 	 */
-	Constructor.prototype.getFirstAndLast = function () {
+	Constructor.prototype.getFirstAndLast = function() {
 		// Define empty array.
 		let array = [];
 
@@ -80,7 +80,7 @@ const $ = ( function () {
 	 *
 	 * @param {String} className The class name to add.
 	 */
-	Constructor.prototype.addClass = function ( className ) {
+	Constructor.prototype.addClass = function( className ) {
 		// Loop through elements and add the class name.
 		this.elements.forEach( ( element ) => {
 			element.classList.add( className );
@@ -92,7 +92,7 @@ const $ = ( function () {
 	 *
 	 * @param {String} className The class name to remove.
 	 */
-	Constructor.prototype.removeClass = function ( className ) {
+	Constructor.prototype.removeClass = function( className ) {
 		// Loop through elements and remove the class name.
 		this.elements.forEach( ( element ) => {
 			element.classList.remove( className );
