@@ -29,6 +29,7 @@ This repo contains notes as well as exercises of the [Vanilla JS Academy](https:
 - Day 43: [DOM manipulation library with chaining methods](https://nielslange.github.io/vanilla-js-academy/day-43/index.html)
 - Day 45: [Debugging Broken Code](https://nielslange.github.io/vanilla-js-academy/day-45/index.html)
 - Day 47: [Autosave](https://nielslange.github.io/vanilla-js-academy/day-47/index.html)
+- Day 49: [Autosave - Single Entry](https://nielslange.github.io/vanilla-js-academy/day-49/index.html)
 
 ## Credits
 
