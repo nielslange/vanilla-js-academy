@@ -82,9 +82,8 @@ function saveFields() {
  */
 function emptyFields() {
 	for ( let i = 0; i < form.length; i++ ) {
-		form[i].value = '';
+		form[ i ].value = '';
 	}
-
 }
 
 /**
