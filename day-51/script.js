@@ -1,4 +1,7 @@
-// Define button element.
+// Get form elements.
+const form = document.querySelector( '#save-me' ).elements;
+
+// Get save button element.
 const save = document.querySelector( 'button' );
 
 // Define storage ID.
@@ -78,7 +81,10 @@ function saveFields() {
  * Empty fields
  */
 function emptyFields() {
-	fields.forEach( ( field ) => ( getElement( field ).value = '' ) );
+	for ( let i = 0; i < form.length; i++ ) {
+		form[i].value = '';
+	}
+
 }
 
 /**
