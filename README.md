@@ -31,6 +31,7 @@ This repo contains notes as well as exercises of the [Vanilla JS Academy](https:
 - Day 47: [Autosave](https://nielslange.github.io/vanilla-js-academy/day-47/index.html)
 - Day 49: [Autosave - Single Entry](https://nielslange.github.io/vanilla-js-academy/day-49/index.html)
 - Day 51: [Autosave - Other Field Types](https://nielslange.github.io/vanilla-js-academy/day-51/index.html)
+- Day 53: [API Cache](https://nielslange.github.io/vanilla-js-academy/day-53/index.html)
 
 ## Credits
 
