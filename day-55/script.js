@@ -79,10 +79,7 @@
 	 */
 	function loadNews( microseconds = 1000 * 60 ) {
 		let news = localStorage.getItem( 'news' );
-
-		if ( microseconds ) {
-			const timestamp = new Date().getTime() - microseconds;
-		}
+		const timestamp = new Date().getTime() - microseconds;
 
 		if ( news ) {
 			news = JSON.parse( news );
