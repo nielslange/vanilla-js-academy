@@ -7,8 +7,8 @@
 	 * @return {String} The API endpoint
 	 */
 	function getEndpoint() {
-		var endpoint = 'https://vanillajsacademy.com/api/';
-		var random = Math.random();
+		const endpoint = 'https://vanillajsacademy.com/api/';
+		const random = Math.random();
 		if (random < 0.5) return endpoint + 'pirates.json';
 		return endpoint + 'fail.json';
 	};
@@ -79,7 +79,10 @@
 	 */
 	function loadNews( microseconds = 1000 * 60 ) {
 		let news = localStorage.getItem( 'news' );
-		const timestamp = new Date().getTime() - microseconds;
+
+		if ( microseconds ) {
+			const timestamp = new Date().getTime() - microseconds;
+		}
 
 		if ( news ) {
 			news = JSON.parse( news );
