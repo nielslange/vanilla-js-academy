@@ -61,11 +61,11 @@
 	 */
 	function handleError( error ) {
 		loadNews( false );
-		console.log( error );
 	}
-
+	
 	/**
 	 * Fetch API call
+	 console.log( error );
 	 */
 	function fetchNews() {
 		fetch( getEndpoint() )
@@ -77,13 +77,13 @@
 	/**
 	 * Get news
 	 */
-	function loadNews( microseconds = 1000 * 60 ) {
+	function loadNews( microseconds = 1000 ) {
 		let news = localStorage.getItem( 'news' );
 		const timestamp = new Date().getTime() - microseconds;
 
 		if ( news ) {
 			news = JSON.parse( news );
-
+			
 			if ( ! microseconds ) {
 				app.innerHTML = news.data;
 			} else if ( timestamp < news.timestamp ) {
