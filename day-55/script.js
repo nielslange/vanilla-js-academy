@@ -1,7 +1,7 @@
 ( function () {
 	// Define app element.
 	const app = document.querySelector( '#app' );
-	
+
 	/**
 	 * Dynamically vary the API endpoint
 	 * @return {String} The API endpoint
@@ -9,9 +9,9 @@
 	function getEndpoint() {
 		const endpoint = 'https://vanillajsacademy.com/api/';
 		const random = Math.random();
-		if (random < 0.5) return endpoint + 'pirates.json';
+		if ( random < 0.5 ) return endpoint + 'pirates.json';
 		return endpoint + 'fail.json';
-	};
+	}
 
 	/**
 	 * Handle response
@@ -29,7 +29,6 @@
 	 * @param {Object} response The response object.
 	 */
 	function handleNews( response ) {
-
 		const articles = response.articles;
 		let data = '';
 
@@ -41,9 +40,13 @@
 			</details>`;
 		} );
 
+		// Remove line breaks from the temporary variable.
+		data = data.replace( /(\r\n|\n|\t|\r)/gm, '' );
+
 		// Create object to save articles and timestamp.
 		const storage = {
 			data: data,
+			endpoint: endpoint,
 			timestamp: new Date().getTime(),
 		};
 
@@ -62,16 +65,16 @@
 	function handleError( error ) {
 		loadNews( false );
 	}
-	
+
 	/**
 	 * Fetch API call
 	 console.log( error );
 	 */
 	function fetchNews() {
 		fetch( getEndpoint() )
-		.then( handleResponse )
-		.then( handleNews )
-		.catch( handleError );
+			.then( handleResponse )
+			.then( handleNews )
+			.catch( handleError );
 	}
 
 	/**
@@ -83,7 +86,7 @@
 
 		if ( news ) {
 			news = JSON.parse( news );
-			
+
 			if ( ! microseconds ) {
 				app.innerHTML = news.data;
 			} else if ( timestamp < news.timestamp ) {

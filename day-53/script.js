@@ -32,9 +32,13 @@
 			</details>`;
 		} );
 
+		// Remove line breaks from the temporary variable.
+		data = data.replace( /(\r\n|\n|\t|\r)/gm, '' );
+
 		// Create object to save articles and timestamp.
 		const storage = {
 			data: data,
+			endpoint: endpoint,
 			timestamp: new Date().getTime(),
 		};
 
@@ -69,16 +73,18 @@
 	 */
 	function loadNews() {
 		let news = localStorage.getItem( 'news' );
-		const timestamp = new Date().getTime() - 1000 * 60 * 3;
+		const timestamp = new Date().getTime() - 1000;
 
-		if ( news ) {
-			news = JSON.parse( news );
+		if ( ! news ) {
+			fetchNews();
+		}
 
-			if ( timestamp < news.timestamp ) {
-				app.innerHTML = news.data;
-			} else {
-				fetchNews();
-			}
+		news = JSON.parse( news );
+
+		if ( timestamp < news.timestamp ) {
+			app.innerHTML = news.data;
+		} else {
+			fetchNews();
 		}
 	}
 
