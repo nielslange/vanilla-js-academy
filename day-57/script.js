@@ -38,7 +38,7 @@ const countDown = window.setInterval( function () {
 	// Show time.
 	app.render();
 
-	// Decrease time;
+	// Decrease time.
 	app.data.time--;
 	
 	// Stop counter if count is zero.
