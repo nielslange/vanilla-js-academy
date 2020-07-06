@@ -1,0 +1,26 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	background: #f5f5f5;
+	color: #4C566A;
+	margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+a {
+	color: #5E81AC;
+	border-bottom: 1px dotted;
+}
+
+a:focus, a:hover {
+	border-bottom: 1px solid;
+	color: #5E81AC;
+	text-decoration: none;
+}
+
+#app {
+	font-family: 'Major Mono Display', 'Courier New', Courier, monospace;
+	font-size: 100px;
+}
