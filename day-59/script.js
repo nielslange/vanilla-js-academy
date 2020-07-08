@@ -114,8 +114,6 @@ const app = new Rue( '#app', {
 			return '⏰ <p><button class="btn btn-primary" data-restart-timer>Restart timer</button></p>';
 		}
 
-		console.log( props.time );
-
 		// Show the current time, if the timer is still running.
 		return props.time;
 	},
