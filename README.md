@@ -34,6 +34,7 @@ This repo contains notes as well as exercises of the [Vanilla JS Academy](https:
 - Day 53: [API Cache](https://nielslange.github.io/vanilla-js-academy/day-53/index.html)
 - Day 55: [API Cache - Fallback](https://nielslange.github.io/vanilla-js-academy/day-55/index.html)
 - Day 57: [Countdown Timer](https://nielslange.github.io/vanilla-js-academy/day-57/index.html)
+- Day 59: [Countdown Timer - Formatted](https://nielslange.github.io/vanilla-js-academy/day-59/index.html)
 
 ## Credits
 
