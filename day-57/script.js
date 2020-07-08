@@ -40,7 +40,7 @@ const countDown = window.setInterval( function () {
 
 	// Decrease time.
 	app.data.time--;
-	
+
 	// Stop counter if count is zero.
 	if ( 0 > app.data.time ) {
 		window.clearInterval( countDown );
